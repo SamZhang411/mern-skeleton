@@ -6,9 +6,9 @@ This web application is developed with the help of Full-Stack React Projects by 
 To run this code: 
 
 Environment: 
-Node (13.12.0)
-NPM (6.14.4) or Yarn (1.22.4)
-MongoDB (4.2.0)
+Node (13.12.0) \n
+NPM (6.14.4) or Yarn (1.22.4) \n
+MongoDB (4.2.0) \n
 
 Procedure:
 Make sure Mongo DB is running properly on your local machine;
