@@ -39,28 +39,28 @@ export default function DeleteUser(props) {
   if (redirect) {
     return <Redirect to='/'/>
   }
-    return (<span>
-      <IconButton aria-label="Delete" onClick={clickButton} color="secondary">
-        <DeleteIcon/>
-      </IconButton>
+  return (<span>
+    <IconButton aria-label="Delete" onClick={clickButton} color="secondary">
+      <DeleteIcon/>
+    </IconButton>
 
-      <Dialog open={open} onClose={handleRequestClose}>
-        <DialogTitle>{"Delete Account"}</DialogTitle>
-        <DialogContent>
-          <DialogContentText>
-            Confirm to delete your account.
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleRequestClose} color="primary">
-            Cancel
-          </Button>
-          <Button onClick={deleteAccount} color="secondary" autoFocus="autoFocus">
-            Confirm
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </span>)
+    <Dialog open={open} onClose={handleRequestClose}>
+      <DialogTitle>{"Delete Account"}</DialogTitle>
+      <DialogContent>
+        <DialogContentText>
+          Confirm to delete your account.
+        </DialogContentText>
+      </DialogContent>
+      <DialogActions>
+        <Button onClick={handleRequestClose} color="primary">
+          Cancel
+        </Button>
+        <Button onClick={deleteAccount} color="secondary" autoFocus="autoFocus">
+          Confirm
+        </Button>
+      </DialogActions>
+    </Dialog>
+  </span>)
 
 }
 DeleteUser.propTypes = {

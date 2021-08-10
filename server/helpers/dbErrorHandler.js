@@ -3,7 +3,7 @@
 /**
  * Get unique error field name
  */
-const getUniqueErrorMessage = (err) => {
+ const getUniqueErrorMessage = (err) => {
     let output
     try {
         let fieldName = err.message.substring(err.message.lastIndexOf('.$') + 2, err.message.lastIndexOf('_1'))
@@ -18,7 +18,7 @@ const getUniqueErrorMessage = (err) => {
 /**
  * Get the error message from error object
  */
-const getErrorMessage = (err) => {
+ const getErrorMessage = (err) => {
     let message = ''
 
     if (err.code) {
